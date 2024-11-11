@@ -118,16 +118,16 @@ class Pizza:
     else:
        self.sauce = 'red'
     
-class Pizzeria:
+class Pizzeria(Pizza):
    def __init__(self , orders,  price_per_topping, price_per_inch, pizzas):
-        
-   def place_order():
 
-   def get_price():
+#   def place_order():
 
-   def get_receipt():
+#   def get_price():
 
-   def get_number_of_orders():
+#   def get_receipt():
+
+#   def get_number_of_orders():
 
 #my_pizza = Pizza(2, '', '')
 #print(my_pizza.size)
