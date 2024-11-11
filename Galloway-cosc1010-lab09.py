@@ -117,7 +117,17 @@ class Pizza:
         self.sauce = sauce
     else:
        self.sauce = 'red'
-            
-the_pizza = Pizza(2, '', '')
-print(the_pizza.Toppings)
-#class Pizzeria:
+    
+class Pizzeria:
+   def __init__(self , orders,  price_per_topping, price_per_inch, pizzas):
+        
+   def place_order():
+
+   def get_price():
+
+   def get_receipt():
+
+   def get_number_of_orders():
+
+#my_pizza = Pizza(2, '', '')
+#print(my_pizza.size)
