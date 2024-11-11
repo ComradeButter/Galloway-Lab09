@@ -104,11 +104,10 @@ Your total price is $12.9
 Would you like to place an order? exit to exit
 """
 class Pizza:
- def __init__(self, size, sauce, Toppings):
-    if Toppings != '':
-        self.Toppings = Toppings.split(',')
-    else:
-       self.Toppings = ['cheese']
+ def __init__(self, size, sauce,):
+    self.user_toppings = ['cheese']
+    def add_toppings(self, user_toppings):
+       
     if size > 10:
         self.size = size
     else:
@@ -119,8 +118,8 @@ class Pizza:
        self.sauce = 'red'
     
 class Pizzeria(Pizza):
-   def __init__(self , orders,  price_per_topping, price_per_inch, pizzas):
-
+   def __init__(self):
+        self.price_per_topping = Topping
 #   def place_order():
 
 #   def get_price():
