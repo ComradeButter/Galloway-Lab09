@@ -162,8 +162,8 @@ class Pizzaria:
     print(f"Size:{pizza.getSize()} inches")
     print(f"Toppings: {', '.join(pizza.getToppings())}")
     print(f"Price for size:${pizza.getSize() * Pizzaria.size_price:.2f}")
-    print(f"Price for toppings:${pizza.amountTopping() * Pizzaria.topping_price():.2f}")
-    print(f"Total:${self.getPrice():.2f}\n")
+    print(f"Price for toppings:${pizza.amountTopping() * Pizzaria.topping_price:.2f}")
+    print(f"Total:${self.getPrice(pizza):.2f}\n")
   def get_orders(self):
     return self.orders
   
@@ -172,8 +172,10 @@ def main():
 
   while(True):
     order = input("Place an order?(type 'exit' to quit)")
-    if order.lower() == exit:
+    if order.lower() == 'exit':
       break
     else:
       pizzaria.placeOrder()
   print(f"Total number of orders placed {pizzaria.get_orders()}")
+if __name__ == "__main__":
+  main()
